@@ -1,0 +1,8 @@
+2026-06-07T00:44:51+03:00 -- info -- Processing Transactions User Hussein transaction with value -20, User Hussein transaction with value -30, User Hussein transaction with value -50, User Hussein transaction with value -100, User Hussein transaction with value -100, User Menna transaction with value -100...
+2026-06-07T00:44:51+03:00 -- info -- User Hussein transaction with value -20 succeeded
+2026-06-07T00:44:51+03:00 -- info -- User Hussein transaction with value -30 succeeded
+2026-06-07T00:44:51+03:00 -- info -- User Hussein transaction with value -50 succeeded
+2026-06-07T00:44:51+03:00 -- info -- User Hussein transaction with value -100 succeeded
+2026-06-07T00:44:51+03:00 -- warning -- Hussein has 0 balance
+2026-06-07T00:44:51+03:00 -- error -- User Hussein transaction with value -100 failed with message Not enough balance
+2026-06-07T00:44:51+03:00 -- error -- User Menna transaction with value -100 failed with message Menna not exist in the bank!!
