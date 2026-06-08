@@ -1,0 +1,47 @@
+<h1><%= @article.title %></h1>
+
+<p>
+  <%= @article.content %>
+</p>
+
+<p>
+  Author:
+  <%= @article.user.email %>
+</p>
+
+<p>
+  Reports:
+  <%= @article.reports_count %>
+</p>
+
+<% if @article.image.attached? %>
+
+  <%= image_tag @article.image, width: 300 %>
+
+<% end %>
+
+<hr>
+
+
+<% if user_signed_in? && @article.user == current_user %>
+
+  <%= link_to "Edit", edit_article_path(@article) %>
+
+  <%= button_to "Delete",
+  @article,
+  method: :delete %>
+
+<% end %>
+
+
+<% if user_signed_in? && @article.user != current_user %>
+
+  <%= button_to "Report",
+  report_article_path(@article),
+  method: :post %>
+
+<% end %>
+
+<br>
+
+<%= link_to "Back", articles_path %>
